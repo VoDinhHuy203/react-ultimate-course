@@ -18,7 +18,11 @@ const App = () => {
     };
 
     const addNewTodo = (name) => {
-        alert(`call me ${name}`);
+        const newTodo = {
+            id: 3,
+            name: name,
+        };
+        setTodoList([...todoList, newTodo]);
     };
 
     return (
